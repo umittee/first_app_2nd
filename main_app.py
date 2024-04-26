@@ -34,7 +34,7 @@ def predict(image, labels, model):
     
 
 def main():
-    model = Resnet(num_classes=7)
+    model = Resnet()
     model.load_state_dict(torch.load("car_image.pt", map_location='cpu'))
 
     with open("labels.txt", "r") as f:
