@@ -65,7 +65,7 @@ def main():
             results = predict(img, labels, model)
 
             st.subheader("判定結果")
-            num_top = 5
+            num_top = 3
             for result in results[:num_top]:
                 st.write(str(round(result[1] * 100, 2)) + "%の確率で" + result[0] + "です。")
 
