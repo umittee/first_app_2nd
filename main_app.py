@@ -41,7 +41,6 @@ def main():
         labels = [line.strip() for line in f.readlines()]
 
     st.sidebar.title("車の画像分類アプリ")
-    st.sidebar.write("画像認識モデルを使って車の種類を判定します。")
     st.sidebar.write("判別が可能な種類は以下の通りです。")
     for label in labels:
         st.sidebar.write(f"{label}")
