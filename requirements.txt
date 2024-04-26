@@ -1,4 +1,4 @@
 torch
-torchvisionj
+torchvision
 pillow
 streamlit
